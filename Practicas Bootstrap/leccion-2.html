@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Detalle de lección 2 Bootstrap" />
+      <link rel="stylesheet" href="../css/bootstrap.min.css" />
+      <title>Leccion 2 | Grid Bootstrap</title>
+      <style>
+         .row > div { /*Esto aplicara a todos los hijos div directos de cualquier row */
+            background: #f2f2f2; /*Color blanco*/
+            margin: 10px 0; /*Margen 10px arriba y abajo y 0 a los lados */
+         }
+         .contenedor-enlaces {
+            margin: 20px 0;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Bootstrap como maximo utiliza 12 columnas para cada row(fila) -->
+      <!-- Los elementos de la rejilla constan de 3 partes; container, row y col. -->
+      <div class="container"><!--Centra el contenido de toda la pagina-->
+         <div class="row"><!--Alinea el contenido horizontal-->
+            <div class="col-12"><!--Alinea el contenido vertical-->
+               <!-- A la clase col se le añade el numero de columnas que se desea que ocupe la etiqueta a la que se aplico -->
+               <h1>Lección 2 | Grid Bootstrap</h1>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis itaque, modi mollitia quasi doloremque laudantium nostrum aut labore explicabo temporibus aliquid consectetur odit consequuntur beatae optio libero inventore impedit cumque.</p>
+            </div>
+            <div class="col-6"><!--Alinea el contenido vertical-->
+               <h2>Hello World</h2>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis itaque, modi mollitia quasi doloremque laudantium nostrum aut labore explicabo temporibus aliquid consectetur odit consequuntur beatae optio libero inventore impedit cumque.</p>
+            </div>
+            <div class="col-6"><!--Alinea el contenido vertical-->
+               <h2>Hello World</h2>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis itaque, modi mollitia quasi doloremque laudantium nostrum aut labore explicabo temporibus aliquid consectetur odit consequuntur beatae optio libero inventore impedit cumque.</p>
+            </div>
+            <div class="col"><!--Alinea el contenido vertical-->
+               <!-- Al no especificar el numero de columnas en el col, en automatico el col intentara ocupar todo el espacio que pueda -->
+               <h2>Hello World</h2>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis itaque, modi mollitia quasi doloremque laudantium nostrum aut labore explicabo temporibus aliquid consectetur odit consequuntur beatae optio libero inventore impedit cumque.</p>
+            </div>
+            <div class="col"><!--Alinea el contenido vertical-->
+               <h2>Hello World</h2>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis itaque, modi mollitia quasi doloremque laudantium nostrum aut labore explicabo temporibus aliquid consectetur odit consequuntur beatae optio libero inventore impedit cumque.</p>
+            </div>
+            <div class="col"><!--Alinea el contenido vertical-->
+               <h2>Hello World</h2>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis itaque, modi mollitia quasi doloremque laudantium nostrum aut labore explicabo temporibus aliquid consectetur odit consequuntur beatae optio libero inventore impedit cumque.</p>
+            </div>
+            <div class="col-12">
+               <h2>Tamaños de Columna</h2>
+               <img src="../images/medidas columnas bootstrap4.png" alt="Medidas de columnas" />
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-12 col-md-4"><!--De esta forma se le esta indicando que en el tamaño mas pequeño hasta el mediano tome 12 columnas de tamaño, y a partir del mediano tome solo 4 columnas-->
+               <h2>Hello</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, exercitationem!</p>
+            </div>
+            <div class="col-12 col-md-4">
+               <h2>Hello</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, exercitationem!</p>
+            </div>
+            <div class="col-12 col-md-4">
+               <h2>Hello</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, exercitationem!</p>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-2">
+               <!-- A este div se le aplica el cambio de tamaño en todos los tamaños de columna -->
+               <h2>:)</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="w-100"></div><!--Este div con esta clase sirve para hacer un salto de linea-->
+            <div class="col-5 col-md"><!--Si se desea que a partir de un tamaño en especifico la etiqueta ocupe todo lo que pueda, solo se escribe la columna y el tamaño sin especificar numero de columnas que abarcara -->
+               <h2>:)</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, magnam? Iste voluptatibus distinctio maiores dolore?</p>
+            </div>
+         </div>
+         <div class="contenedor-enlaces row justify-content-around">
+            <a class="col-auto" href="leccion-1.html">Lección anterior</a>
+            <a class="col-auto" href="leccion-3.html">Siguiente Lección</a>
+         </div>
+      </div>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/jquery-3.3.1.min.js"></script>
+   </body>
+</html>
