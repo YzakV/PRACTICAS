@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Detalle de leccion 8 Bootstrap" />
+      <link rel="stylesheet" href="../css/bootstrap.min.css" />
+      <title>Leccion 8 |Col Anidadas Bootstrap</title>
+      <style>
+      .contenedor-enlaces {
+         margin: 20px 0;
+      }
+      .container {
+         margin-top: 20px;
+      }
+      .row {
+         background: #e8e8e8;
+
+      }
+      .columna {
+         background:#f2f2f2;
+         text-align: center;
+         border: 1px solid #4d5061;
+      }
+      .columna-interior {
+         background: #e8e8e8;
+         border: 1px solid #4d5061;
+         padding: 10px;
+      }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="columna col-12">
+               <h1>Columnas Anidadas</h1>
+            </div>
+            <div class="columna col-md-6">
+               Columna 1
+               <!-- Para anidar columnas, se requiere que dentro de un col se coloque un row y dentro de este las columnas para anidar -->
+               <div class="row">
+                  <div class="columna-interior col">Columna 1.1</div>
+                  <div class="columna-interior col">Columna 1.2</div>
+               </div>
+            </div>
+            <div class="columna col-md-6">
+               Columna 2
+               <div class="row justify-content-around">
+                  <div class="columna-interior col-4">Columna 2.1</div>
+                  <div class="columna-interior col-4">Columna 2.2</div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="contenedor-enlaces row justify-content-around">
+            <a class="col-auto" href="leccion-7.html">Lección anterior</a>
+            <a class="col-auto" href="leccion-9.html">Siguiente lección</a>
+         </div>
+      </div>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/jquery-3.3.1.min.js"></script>
+   </body>
+</html>
