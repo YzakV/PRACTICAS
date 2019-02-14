@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Detalle de leccion 7 Bootstrap" />
+      <link rel="stylesheet" href="../css/bootstrap.min.css" />
+      <title>Leccion 7 |Ordenamiento Col Bootstrap</title>
+      <style>
+         .row {
+            background: #e8e8e8;
+            margin: 40px 0;
+         }
+         .columna {
+            background: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #4d5061;
+         }
+         .contenedor-enlaces {
+            margin: 20px 0;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="columna col-12">
+               <h1>Ordenamiento de Columnas</h1>
+            </div>
+         </div>
+         <div class="row justify-content-between">
+            <!-- La clase order sirve para reordenar las columnas colocando el numero de la posicion donde se requiere. Se le añade el tamaño de columna donde se requiere que cambie, desde sm hasta xl -->
+            <div class="columna col-2 order-4 order-lg-1">Columna #1</div>
+            <div class="columna col-2 order-3 order-lg-2">Columna #2</div>
+            <div class="columna col-2 order-2 order-lg-3">Columna #3</div>
+            <div class="columna col-2 order-1 order-lg-4">Columna #4</div>
+         </div>
+         <div class="contenedor-enlaces row justify-content-around">
+            <a class="col-auto" href="leccion-6.html">Lección anterior</a>
+            <a class="col-auto" href="leccion-8.html">Siguiente lección</a>
+         </div>
+      </div>
+
+
+
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/jquery-3.3.1.min.js"></script>
+   </body>
+</html>
