@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Detalle de leccion 6 Bootstrap" />
+      <link rel="stylesheet" href="../css/bootstrap.min.css" />
+      <title>Leccion 6 | Offseting Bootstrap</title>
+      <style>
+         .row {
+            background: #e8e8e8;
+            margin: 40px 0;
+            text-align: center;
+         }
+         .columna {
+            background: #f2f2f2;
+            padding: 10px;
+            border: 1px solid #4d5061;
+         }
+         .contenedor-enlaces {
+            margin: 20px 0;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <h1>Offseting (espaciado entre columnas manualmente)</h1>
+            </div>
+         </div>
+         <div class="row">
+            <!-- Se coloca offset y el numero de espacios que aparezcan previos a la columna (cada offset tiene el tamaño de una columna) -->
+            <div class="columna col-auto offset-1">Columna</div>
+         </div>
+         <div class="row">
+            <div class="columna col-4 offset-4">Columna</div>
+         </div>
+         <div class="row">
+            <div class="columna col-auto offset-1">Columna</div>
+            <div class="columna col-auto offset-1">Columna</div>
+         </div>
+         <div class="row">
+            <!-- A offset se le puede indicar en que tamaño de columna puede aplicar ciertos numeros de espacio; desde el sm hasta el xl -->
+            <div class="columna col-4 col-md-8 col-xl-10 offset-4 offset-md-2 offset-xl-1">Columna</div>
+            <!-- La linea anterior es un ejemplo, se puede hacer mucho mejor con justify-content-center en el row -->
+         </div>
+
+
+
+
+         <div class="contenedor-enlaces row justify-content-around">
+            <a class="col-auto" href="leccion-5.html">Lección anterior</a>
+            <a class="col-auto" href="leccion-7.html">Siguiente lección</a>
+         </div>
+      </div>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/jquery-3.3.1.min.js"></script>
+   </body>
+</html>
