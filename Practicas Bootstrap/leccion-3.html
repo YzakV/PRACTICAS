@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Detalle de leccion 3 Bootstrap" />
+      <link rel="stylesheet" href="../css/bootstrap.min.css" />
+      <title>Leccion 3 | Col Auto Bootstrap</title>
+      <style>
+         .row > div {
+            /* background: #f2f2f2; */
+            text-align: center;
+            margin: 10px 0;
+         }
+         .uno, .tres {
+            background: #f2f2f2;
+         }
+         .dos {background: #dbdbdb; }
+         .contenedor-enlaces {
+            margin: 20px 0;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <h1>Columnas Automaticas</h1>
+            </div>
+            <div class="col uno"><h2>Columna #1</h2></div>
+            <div class="col dos col-auto"><!--Añadiendo la clase auto en cualquier tamaño de columna, la columna tendra un tamaño solo del espacio que necesita, en este caso solo ocupara el espacio de su contenido-->
+               <h2>Columna #2</h2>
+            </div>
+            <div class="col tres"><h2>Columna #3</h2></div>
+         </div>
+         <div class="row">
+            <div class="col">
+               <h2>Columna #4</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laudantium numquam in adipisci modi sit.</p>
+            </div>
+            <div class="col">
+               <h2>Columna #5</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laudantium numquam in adipisci modi sit.</p>
+            </div>
+            <div class="w-100"></div><!--Esta clase es un separador entre columnas, sin necesidad de crear ua fila-->
+            <div class="col">
+               <h2>Columna #6</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laudantium numquam in adipisci modi sit.</p>
+            </div>
+            <div class="col">
+               <h2>Columna #7</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laudantium numquam in adipisci modi sit.</p>
+            </div>
+         </div>
+         <div class="contenedor-enlaces row justify-content-around">
+            <a class="col-auto" href="leccion-2.html">Lección anterior</a>
+            <a class="col-auto" href="leccion-4.html">Siguiente lección</a>
+         </div>
+      </div>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/jquery-3.3.1.min.js"></script>
+   </body>
+</html>
