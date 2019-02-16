@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Detalle de leccion 10 Bootstrap" />
+      <link rel="stylesheet" href="../css/bootstrap.min.css" />
+      <title>Leccion 10 | Responsive Utilities Bootstrap</title>
+      <style>
+         .columna {
+            background: #2191fb;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+         }
+         .contenedor-enlaces {
+            margin: 20px 0;   
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <!-- Para ocultar columnas dependiendo el tamaño se utiliza la clase display(d) a la cual se le añade el tamaño de columna en la cual se requiere ocultar segui de none o block(none-desaparece, block-aparace) -->
+            <div class="columna col d-block d-sm-none">
+               XS - Extra Small
+            </div>
+            <div class="columna col d-none d-sm-block d-md-none">
+               SM - Small
+            </div>
+            <div class="columna col d-none d-md-block d-lg-none">
+               MD - Medium
+            </div>
+            <div class="columna col d-none d-lg-block d-xl-none">
+               LG - Large
+            </div>
+            <div class="columna col d-none d-xl-block">
+               XL - Extra Large
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi excepturi harum dolorum est veritatis assumenda vitae aut fugit. Sed necessitatibus ex voluptates reiciendis adipisci beatae alias culpa consequatur illo provident?</p>
+            </div>
+         </div>
+         <div class="contenedor-enlaces row justify-content-around">
+            <a class="col-auto" href="leccion-9.html">Lección anterior</a>
+            <a class="col-auto" href="leccion-11.html">Siguiente lección</a>
+         </div>
+      </div>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/jquery-3.3.1.min.js"></script>
+   </body>
+</html>
