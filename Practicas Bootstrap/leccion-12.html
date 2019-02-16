@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Detalle de leccion 12 Bootstrap" />
+      <link rel="stylesheet" href="../css/bootstrap.min.css" />
+      <title>Leccion 12 |Tipografia y Textos II Bootstrap</title>
+      <style>
+         header {
+            text-align: center;
+            background: #e8e8e8;
+         }
+         .contenedor-enlaces {
+            margin: 20px 0;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <header class="row">
+            <div class="col-12">
+               <h1>Tipografia y Textos II</h1>
+            </div>
+         </header>
+         <div class="row">
+            <div class="col-12">
+               <!-- Etiqueta que sirve para subrayar palabras, estilo marcatextos - mark -->
+               <p>Lorem ipsum dolor sit amet <mark>consectetur</mark></p>
+
+               <!-- Etiqueta para tachar texto - del -->
+               <p><del>Lorem ipsum</del> dolor sit amet consectetur.</p>
+
+               <!-- De igual forma sirve para tachar un texto - s -->
+               <p><s>Lorem ipsum</s> dolor sit amet consectetur.</p>
+
+               <!-- Sirve para subrayar textos - ins -->
+               <p><ins>Lorem ipsum dolor sit amet consectetur.</ins></p>
+               
+               <!-- De igual forma sirve para subrayar textos - u(underline) -->
+               <p><u>Lorem ipsum dolor sit amet consectetur.</u></p>
+               
+               <!-- Colocar textos en negritas - strong -->
+               <p><strong>Lorem ipsum dolor sit amet consectetur.</strong></p>
+               
+               <!-- Hace el texto mas pequeño - small -->
+               <p><small>Lorem ipsum dolor sit amet consectetur.</small></p>
+
+               <!-- Texto con fuente italica - em -->
+               <p><em>Lorem ipsum dolor sit amet consectetur.</em></p>
+            </div>
+            <div class="col-4">
+               <hr />
+               <!-- Esta clase sirve para justificar texto -->
+               <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur fugit quis voluptatum quibusdam voluptates laborum quam nihil corporis quisquam architecto?</p>
+
+               <div class="card"><!--Caja en las que se puede mostrar texto-->
+                  <div class="card-body"><!--Cuerpo de la caja-->
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore exercitationem neque dolorum minus voluptas fugiat omnis quaerat deleniti tempore sapiente!
+                  </div>
+               </div>
+            </div>
+            <div class="w-100"></div><!--Separador de columnas - clase: w-100(width 100%)-->
+            <div class="col-4">
+               <hr />
+               <!-- Clase para alinear el texto horizontalmente -->
+               <p class="text-left">Texto alineado a la izquierda</p>
+               <p class="text-center">Texto alineado a la centrado</p>
+               <p class="text-right">Texto alineado a la derecha</p>
+            </div>
+
+            <div class="w-100"></div>
+
+            <div class="col-12">
+               <!-- Misma clase añadiendo tamaño de dispositivo en el cual se requiere que cambie de lugar el texto -->
+               <p class="text-left text-md-right">Alineado derecha en dispositivos medios</p>
+            </div>
+
+            <div class="col">
+               <hr />
+               <!-- Capitalizacion de letras -->
+               <!-- Letras minus -->
+               <p class="text-lowercase">Minusculas - Lorem ipsum dolor sit amet.</p>
+               <!-- Letras mayus  -->
+               <p class="text-uppercase">Mayusculas - Lorem ipsum dolor sit amet.</p>
+               <!-- La primer letra de cada palabra en mayus -->
+               <p class="text-capitalize">Capitales - Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col">
+               <hr />
+               <!-- Clase para añadir texto en negritas -->
+               <p class="font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+               <!-- Texto normal -->
+               <p class="font-weight-normal">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+               <!-- Texto en italica -->
+               <p class="font-weight-italic">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+
+            <div class="col-6">
+               <blockquote class="blockquote"><!--Sirve para realizar citas-->
+                  <!-- mb-0 sirve para quitar el margen inferior de los parrafos -->
+                  <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, nemo!</p>
+                  <footer class="blockquote-footer"><p>Isaac Vega</p></footer>
+               </blockquote>
+            </div>
+         </div>
+
+
+
+         <div class="contenedor-enlaces row justify-content-around">
+            <a class="col-auto" href="leccion-11.html">Lección anterior</a>
+            <a class="col-auto" href="leccion-13.html">Siguiente lección</a>
+         </div>
+      </div>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/jquery-3.3.1.min.js"></script>
+   </body>
+</html>
