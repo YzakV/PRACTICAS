@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Detalle de leccion 11 Bootstrap" />
+      <link rel="stylesheet" href="../css/bootstrap.min.css" />
+      <title>Leccion 11 |Tipografia y Textos Bootstrap</title>
+      <style>
+         header {
+            text-align: center;
+            background: #e8e8e8;
+         }
+         .contenedor-enlaces {
+            margin: 20px 0;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container-fluid"><!--Con esta clase, el contenedor toma el 100% del vp-->
+         <header class="row">
+            <div class="col-12">
+               <h1>Tipografia y Textos</h1>
+            </div>
+         </header>
+         <div class="row">
+            <div class="col-12">
+               <!-- Con small se vuelve mas ligero el texto dentro de los encabezados -->
+               <!-- Con la clase text-muted dentro de small el texto se coloca de un color gris ligero -->
+               <h1>Encabezado H1 <small class="text-muted">Texto Secundario</small></h1>
+               <h2>Encabezado H2 <small class="text-muted">Texto Secundario</small></h2>
+               <h3>Encabezado H3 <small class="text-muted">Texto Secundario</small></h3>
+               <h4>Encabezado H4 <small class="text-muted">Texto Secundario</small></h4>
+               <h5>Encabezado H5 <small class="text-muted">Texto Secundario</small></h5>
+               <h6>Encabezado H6 <small class="text-muted">Texto Secundario</small></h6>
+            </div>
+            <div class="col-12">
+               <hr />
+               <!-- La clase h y el numero de encabezado, sirve para parde estilo a una etiqueta de un encabezado desde el h1 - h6 -->
+               <p class="h1">Parrafo con estilo de Encabezado H1</p>
+               <p class="h2">Parrafo con estilo de Encabezado H2</p>
+               <p class="h3">Parrafo con estilo de Encabezado H3</p>
+               <p class="h4">Parrafo con estilo de Encabezado H4</p>
+               <p class="h5">Parrafo con estilo de Encabezado H5</p>
+               <p class="h6">Parrafo con estilo de Encabezado H6</p>
+            </div>
+            <div class="col-12">
+               <hr />
+               <!-- Clase diaplay es para darle un estilo diferente a las etiquetas, trazo mas delgado y tamaño de letra mayor -->
+               <h1 class="display-1">Encabezado Display</h1>
+               <h1 class="display-2">Encabezado Display</h1>
+               <h1 class="display-3">Encabezado Display</h1>
+               <h1 class="display-4">Encabezado Display</h1>
+            </div>
+            <div class="col-12">
+               <hr />
+               <!-- Clase para indicar parrafo importante, resaltado -->
+               <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aperiam veritatis voluptate asperiores consequuntur accusamus.</p>
+
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aperiam veritatis voluptate asperiores consequuntur accusamus.</p>
+            </div>
+         </div>
+         <div class="contenedor-enlaces row justify-content-around">
+            <a class="col-auto" href="leccion-10.html">Lección anterior</a>
+            <a class="col-auto" href="leccion-12.html">Siguiente lección</a>
+         </div>
+      </div>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/jquery-3.3.1.min.js"></script>
+   </body>
+</html>
