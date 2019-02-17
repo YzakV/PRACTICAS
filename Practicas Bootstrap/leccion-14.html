@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Detalle de leccion 14 Bootstrap" />
+      <link rel="stylesheet" href="../css/bootstrap.min.css" />
+      <title>Leccion 14 | Imagenes Bootstrap</title>
+      <style>
+         .contenedor-enlaces {
+            margin: 20px 0;
+         }
+         header {
+            background: #e8e8e8;
+            text-align: center;
+            margin-bottom: 20px;
+         }
+         .columna {
+            background: #f2f2f2;
+            border: 1px solid #424242;
+         }
+         .row > div {
+            margin-bottom: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container-fluid">
+         <header class="row">
+            <div class="col-12">
+               <h1>Imagenes y Figures</h1>
+            </div>
+         </header>
+         <!-- La clase no-gutters se aplica al row y esta elimina los paddings por defecto que tengas las columnas -->
+         <div class="row no-gutters">
+            <div class="col-4 columna">
+               <!-- img-fluid sirve para que una imagen se adabpte al tamaño de la columna -->
+               <img class="img-fluid" src="http://lorempixel.com/800/800/" alt="" />
+            </div>
+            <div class="w-100"></div>
+            <div class="col-4 columna">
+               <!-- float-(left/right) sirve para colocar un elemento ya sea a la izquierda o derecha de su contenedor -->
+               <img class="" src="http://lorempixel.com/200/200/" alt="" />
+               <img class="float-right" src="http://lorempixel.com/200/200/" alt="" />
+            </div>
+            <div class="w-100"></div>
+            <div class="col-6">
+               <!-- Esquina un poco redondeadas -->
+               <img class="rounded" src="http://lorempixel.com/200/200/" alt="" />
+               <!-- Efecto diferente con borde redondeado y margen ligero -->
+               <img class="float-right img-thumbnail" src="http://lorempixel.com/200/200/" alt="" />
+            </div>
+            <div class="w-100"></div>
+            <div class="col-6">
+               <!-- Caja para imagenes conocidos como los figures, sirve para colocar una imagen y texto en la parte de abajo con un estilo diferente -->
+               <figure class="figure">
+                  <img class="rounded img-fluid" src="http://lorempixel.com/400/400/" alt="" />
+                  <figcaption class="figure-caption">
+                     <p class="text-center">Lorem ipsum dolor sit amet consectetur</p>
+                  </figcaption>
+               </figure>
+            </div>
+         </div>
+         <div class="contenedor-enlaces row justify-content-around">
+            <a class="col-auto" href="leccion-13.html">Lección anterior</a>
+            <a class="col-auto" href="leccion-15.html">Siguiente lección</a>
+         </div>
+      </div>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/jquery-3.3.1.min.js"></script>
+   </body>
+</html>
