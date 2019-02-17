@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Detalle de leccion 13 Bootstrap" />
+      <link rel="stylesheet" href="../css/bootstrap.min.css" />
+      <title>Leccion 13 | Bloques Codigo Bootstrap</title>
+      <style>
+         .contenedor-enlaces {
+            margin: 20px 0;
+         }
+         header {
+            background: #e8e8e8;
+            margin-bottom: 20px;
+            text-align: center;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container-fluid">
+         <header class="row">
+            <div class="col-12">
+               <h1>Bloques de Codigo</h1>
+            </div>
+         </header>
+         <div class="row">
+            <div class="col-6">
+               <h2>Bloques de Codigo en Linea</h2>
+               <!-- Etiqueta code sirve para resaltar etiquetas HTML-->
+               <p>Lorem ipsum dolor sit amet <code>&lt;consectetur&gt;</code> adipisicing elit. Architecto alias illo quo, eius ducimus vero.</p>
+               <hr />
+               <h2>Bloques de Codigo</h2>
+               <p>
+                  <!-- Etiqueta pre sirve para pre-formatear un texto y que aparezca tal y como se ve en el editorpero en el navegador -->
+<pre>
+<code>&lt;h1&gt;Lorem ipsum dolor sit amet&lt;/h1&gt;</code>
+</pre>
+               </p>
+
+               <hr />
+               <h2>Teclas</h2>
+               <!-- kdb le da estilo a la etiqueta haciendola parecer una tecla -->
+               <p>Para copiar texto presiona <kbd>Ctrl + C</kbd></p>
+               <p>Para pegar texto presiona <kbd>Ctrl + V</kbd></p>
+            </div>
+         </div>
+
+         <div class="contenedor-enlaces row justify-content-around">
+            <a class="col-auto" href="leccion-12.html">Lección anterior</a>
+            <a class="col-auto" href="leccion-14.html">Siguiente lección</a>
+         </div>
+      </div>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/jquery-3.3.1.min.js"></script>
+   </body>
+</html>
