@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Detalle de leccion 15 Bootstrap" />
+      <link rel="stylesheet" href="../css/bootstrap.min.css" />
+      <title>Leccion 15 | Tablas Bootstrap</title>
+      <style>
+         .contenedor-enlaces {
+            margin: 20px 0;
+         }
+         header {
+            background: #e8e8e8;
+            margin-bottom: 20px;
+            text-align: center;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <header class="row">
+            <div class="col-12">
+               <h1>Tablas</h1>
+            </div>
+         </header>
+         <div class="row">
+            <div class="col-12">
+               <!-- Clase table da estilos a la tabla -->
+               <table class="table table-responsive-md table-hover table-bordered"><!--Para iniciar una tabla, etiqueta table-->
+                  <thead><!--Esta etiqueta sirve para colocar un encabezado en la tabla-->
+                     <tr>
+                        <th>Nombre</th><!--th define una celda como cabecera de una columna -->
+                        <th>Edad</th>
+                        <th>Pais</th>
+                        <!-- Clase table-responsive-(tamaño de columna desde sm - xl) sirve para adaptar la tabla a un tamaño de dispositivo, colocando un scroll horizontal si existen muchas celdas que escapen del tamaño de dispositivo -->
+                        <th>Prueba  </th>
+                        <th>Prueba  </th>
+                        <th>Prueba  </th>
+                        <th>Prueba  </th>
+                     </tr>
+                  </thead>
+                  <tr><!--Filas dentro de la tabla-->
+                     <td>Isaac</td><!--Segmentos dentro de la fila(se podria decir que es una columna)-->
+                     <td>23</td>
+                     <td>México</td>
+                  </tr>
+                  <tr class="table-success">
+                     <td>Alejandro</td>
+                     <td>36</td>
+                     <td>México</td>
+                  </tr>
+                  <tr class="table-active">
+                     <td>Alejandro</td>
+                     <td>36</td>
+                     <td>México</td>
+                  </tr>
+                  <!-- Distintos tipos de estilo para las filas de la tabla con la clase table-(succeess, active, info, warning, danger).
+                  Tambien se le puede aplicar esta clase a la etiqueta padre table -->
+                  </tr>
+                  <tr class="table-warning">
+                     <td>Alejandro</td>
+                     <td>36</td>
+                     <td>México</td>
+                  </tr>
+                  <tr class="table-danger">
+                     <td>Alejandro</td>
+                     <td>36</td>
+                     <td>México</td>
+                  </tr>
+                  <tr class="table-info">
+                     <td>Alejandro</td>
+                     <td>36</td>
+                     <td>México</td>
+                  </tr>
+                  <!-- .bg-primary -->
+                  <!-- .bg-success -->
+                  <!-- .bg-warning -->
+                  <!-- .bg-danger -->
+                  <!-- .bg-info -->
+                  <!-- Estas clases son propias de bootstrap para dar color a cualquier elemento.
+                       *NO SON UNICAS DE LAS TABLAS -->
+                  <tr class="bg-primary text-white">
+                     <!-- text-white sirve para cualquier elemento html para cambiar el color del texto del elemento -->
+                     <td>Isaac</td>
+                     <td>23</td>
+                     <td>CDMX</td>
+                  </tr>
+                  <tr class="bg-info">
+                     <td>Isaac</td>
+                     <td>23</td>
+                     <td>CDMX</td>
+                  </tr>
+                  <tr class="bg-danger">
+                     <td>Isaac</td>
+                     <td>23</td>
+                     <td>CDMX</td>
+                  </tr>
+                  <tr class="bg-success">
+                     <td>Isaac</td>
+                     <td>23</td>
+                     <td>CDMX</td>
+                  </tr>
+                  <tr class="bg-warning">
+                     <td>Isaac</td>
+                     <td>23</td>
+                     <td>CDMX</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-12">
+               <h2>Lista de clases para tablas</h2>
+               <img src="../images/clases para tablas.png" alt="" />
+            </div>
+         </div>
+
+
+
+
+         <div class="contenedor-enlaces row justify-content-around">
+            <a class="col-auto" href="leccion-14.html">Lección anterior</a>
+            <a class="col-auto" href="leccion-16.html">Siguiente lección</a>
+         </div>
+      </div>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/jquery-3.3.1.min.js"></script>
+   </body>
+</html>
